@@ -9,11 +9,10 @@ CORS(app)
 @app.route("/api/home", methods=['GET'])
 def return_home():
     return jsonify({
-        'message': "Auth!",
-        'people': ['User1', 'User2', 'User3']
+        'message': "Like this video if this helped!",
+        'people': ['Jack', 'Harry', 'Arpan']
     })
 
 
 if __name__ == "__main__":
-    # app.run(debug=True) # 5000
     app.run(debug=True, port=8080)
